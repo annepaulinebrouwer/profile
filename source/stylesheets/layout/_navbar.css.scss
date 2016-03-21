@@ -1,0 +1,94 @@
+/* Main class */
+.navbar {
+  transition: all 0.3s ease;
+  display: flex;
+  height: 30px;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+  position: fixed; // if it is put on absolute it stays there
+  width: 100%;
+  z-index: 1;
+}
+
+/* Optional class to fix the navbar on top */
+.navbar-fixed {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Navbar right section (with form, links, button) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;;
+}
+
+/* Navbar item */
+.navbar-item {
+  flex: 0 1 auto;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+/* Navbar standard link */
+.navbar-link {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.navbar-link:hover {
+  color: #437032;
+  text-decoration: none;
+}
+
+/* Navbar dropdown menu */
+.navbar-dropdown-menu {
+  margin-top: 15px;
+  box-shadow: 1px 1px 4px #E6E6E6;
+  border-color: #E6E6E6;
+}
+.navbar-dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: #999999 !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+.navbar-dropdown-menu li > a:hover {
+  background: transparent !important;
+  color: black !important;
+}
+.navbar-dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+}
+
+.navbar-right a {
+  &:focus {
+    outline: 0px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.navbar.has-background {
+  background-color: white;
+  a {
+    color: $green;
+  }
+}
+

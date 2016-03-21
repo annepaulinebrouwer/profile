@@ -1,0 +1,34 @@
+/* Banner design */
+.banner {
+  display: fixed;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 94vh;
+  min-height: 400px;
+  color: white;
+  background-size: cover !important;
+  padding-top:80px;
+  position: relative;
+
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 55px;
+    position: absolute;
+    bottom: 115px;
+    color: white;
+  }
+
+  p {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 55px;
+    position: absolute;
+    bottom: 80px;
+    color: white;
+    opacity: .6;
+  }
+}
